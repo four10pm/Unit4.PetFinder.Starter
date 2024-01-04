@@ -9,7 +9,23 @@
 </head>
 <body>
     <h1>Pet Finder</h1>
-    
-    <script src="script.js"></script>
+    <div name="petform" id="petform">
+        <p> Find by pet </p>
+        <button value="Fido"> <a href="/api/v1/pets/Fido" style="text-decoration: none"> Fido </a> </button>  
+        <button value="Spot"> <a href="/api/v1/pets/Spot" style="text-decoration: none"> Spot </a> </button> 
+        <button value="Rover"> <a href="/api/v1/pets/Rover" style="text-decoration: none"> Rover </a> </button> 
+    </div> 
+    <div id="ownerformarea"> 
+    <form name="ownerform" id="ownerform" action="/api/v1/pets/owner">
+        <label> Find by owner </label> </br> 
+        <select id="ownername" name="owner"> 
+            <option value="John"> John </option>
+            <option value="Jane"> Jane </option>
+            <option value="John"> John B. </option>
+        </select> 
+        <button id="ownersearch"> Search </button>  
+    </form> 
+    </div>
+    <div id="petinfo"> </div>
 </body>
 </html>
